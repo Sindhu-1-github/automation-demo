@@ -13,22 +13,29 @@ This project provides an in-memory store for recently played songs. It can accom
 ## Prerequisites
 
 Make sure you have the following installed:
-- [Node.js](https://nodejs.org/en/download/) (v14.x or later)
-- [npm](https://www.npmjs.com/get-npm) (v6.x or later)
+- Node.js (v14.x or later)
+- npm (v6.x or later)
 
 ## Installation
 
 1. Clone the repository:
 
-    ```bash
+    bash
     git clone https://github.com/your-username/recently-played-store.git
     cd recently-played-store
-    ```
+    
 
 2. Install dependencies:
 
-    ```bash
+    bash
     npm install
-    ```
+    
 
+## Usage
 
+### Adding a Song to Recently Played List
+
+To add a song to a user's recently played list, use the following function:
+
+```javascript
+store.addSong(userId, song);
